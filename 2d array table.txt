@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int r,c,i,j,p,q;
+    printf("Enter no of rows :");
+    scanf("%d",&r);
+    printf("Enter no of columns :");
+    scanf("%d",&c);
+    
+    int a[r][c];
+    printf("Enter elements :");
+    printf("\n");
+    for(i =0 ; i<r; i++){
+        for(j=0;j<c;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(p=0; p<r; p++){
+        for(q=0; q<c; q++){
+            printf("%d",a[p][q]);
+            printf(" ");
+          
+        }
+        printf("\n");
+    }
+      
+    return 0;
+}
