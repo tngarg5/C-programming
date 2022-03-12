@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main() {
-    int r,c,i,j,p,q;
+    int r;
     double area;
     printf("Enter side of triangle :");
     scanf("%d",&r);
