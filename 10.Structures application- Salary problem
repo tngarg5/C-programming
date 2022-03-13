@@ -1,5 +1,5 @@
  
-/* 	Read n employees' details like name, employee id and Basic salary using structure
+/*	Read n employees' details like name, employee id and Basic salary using structure
 	and then print the entered values. (Use array of structures)
 	EMPLOYEE GROSS SALARY CALCULATION:  Extend the employee structure program
 	in practice question to  calculate  Gross salary (Basic +HRA+DA) for every
