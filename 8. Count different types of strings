@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char c[50];           //no type Of operator in C as no polymorphism in C
+    int alph=0,num=0,space=0,spchr=0;
+    printf("Enter your string : ");
+   // scanf("%10s",c);  //accepts only till 1st space only. use gets()for accepting space
+    gets(c);
+    for(int i=0; c[i]!= '\0'; i++) 
+    {
+        if((c[i] >= 'A' && c[i]<= 'Z')||(c[i] >= 'a' && c[i]<= 'z'))
+        alph++;
+        else if(c[i] >= '0' && c[i] <= '9')
+        num++;
+        else if(c[i] == ' ')
+        space++;
+        else
+        spchr++;
+    }
+    printf("Alphabets : %d \n",alph);
+    printf("Numbers : %d \n",num);
+    printf("Spaces : %d \n",space);
+    printf("Special Chars : %d \n",spchr);
+    
+    return 0;
+    
+    
+}
+    
