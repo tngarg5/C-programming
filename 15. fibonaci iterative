@@ -1,0 +1,18 @@
+void main()
+{
+	int  n, i,t=0;
+	printf("Enter the limit:\n");
+	scanf("%d", &n);
+	printf("The series is:\n");
+	int a =0;
+	int b = 1;
+	   printf("%d\t",a);
+	   printf("%d\t",b);
+	for (i =0; i < n; i++)
+	{
+		t = a+b;
+		printf("%d\t",t);
+		a = b;
+		b=t;
+	}
+}
