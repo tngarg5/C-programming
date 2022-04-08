@@ -1,0 +1,58 @@
+// Method 1 : using % hcf method: <o(n)
+#include <stdio.h>
+
+int hcf(int a, int b){
+    if(a %b == 0)
+    return b;
+    else 
+    return hcf(b, a%b);
+}
+void main()
+{
+	int  n,m,a,b;
+	printf("Enter numbers:\n");
+	scanf("%d", &n);
+	scanf("%d", &m);
+	printf("The HCF:\n");
+	if(n>m){
+	    a=n;
+	    b=m;
+	}
+	else if(m>n) {
+	    a = m;
+	    b = n;
+	}
+	printf("%d\n", hcf(a,b));
+	  
+	    }
+	    
+// method 2: using direct loop( O(N)
+#include <stdio.h>
+void main()
+{
+	int  n,m,a,b, i,t=1;
+	printf("Enter numbers:\n");
+	scanf("%d", &n);
+	scanf("%d", &m);
+	printf("The HCF:\n");
+	if(n>m){
+	    a=n;
+	    b=m;
+	}
+	else if(m>n) {
+	    a = m;
+	    b = n;
+	}
+	if(a%b==0)
+	   printf("%d\t",b);
+	else
+	  {
+	for (i =2; i < b ; i++)
+	{
+	if(a%i==0 && b%i == 0){
+		t = i;
+	break;
+	}
+	}
+    printf("%d\t",t);
+}}
