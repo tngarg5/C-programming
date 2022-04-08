@@ -1,0 +1,20 @@
+//Even or odd, for even check divisble by 4.c
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    // Write C code here
+    int a;
+    printf("Enter a number\n");
+    scanf("%d",&a);
+    if(a%2 != 0)
+    printf("Odd Number\n");
+    else if(a%4 ==0 )
+    printf("Even & divisible by 4\n");
+    else
+    printf("Even\n");
+    
+  
+    
+    return 0;
+}
