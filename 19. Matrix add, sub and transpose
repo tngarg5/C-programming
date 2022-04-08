@@ -1,0 +1,93 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main()
+{
+    int a,b,c,d;
+    //input 2 matrix
+    printf("Enter matrix 1 specifications\n");
+    scanf("%d%d" , &a,&b);
+    printf("Enter matrix b specs:\n");
+    scanf("%d%d", &c, &d);
+       int p[a][b];
+    int q[c][d];
+    printf("Input elements :\n ");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            scanf("%d", &p[i][j] );
+        }
+    }
+    for (int i =0 ; i <c; i++){
+        for(int j = 0; j<d; j++){
+            scanf("%d", &q[i][j] );
+        }
+    }
+    // matrix representation
+    printf("MAtrix 1 : \n");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            printf("%d\t", p[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Matrix 2 : \n");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            printf("%d\t", q[i][j]);
+        }
+        printf("\n");
+    }
+    
+    // Addition
+   
+    if(a==c && b==d){
+        int add[a][b];
+        for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            add[i][j] = p[i][j] + q[i][j];
+        
+    }}
+    printf("addition result : \n");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            printf("%d\t", add[i][j]);
+        }
+        printf("\n");
+    }
+        }
+// transpose
+int trans[b][a];
+for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            trans[j][i] = p[i][j];
+        }
+}
+  printf("Transpose result : \n");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            printf("%d\t", trans[i][j]);
+        }
+        printf("\n");
+    }
+        
+	//subtraction
+	if(a==c && b==d){
+        int sub[a][b];
+        for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            sub[i][j] = p[i][j] - q[i][j];
+        
+    }}
+    printf("Subtraction result : \n");
+    for (int i =0 ; i <a; i++){
+        for(int j = 0; j<b; j++){
+            printf("%d\t", sub[i][j]);
+        }
+        printf("\n");
+    }
+        }
+        
+       
+	
+
+	    }
