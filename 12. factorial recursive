@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+
+int factorial (int a){
+    if(a==0)
+    return 1;
+     return a * factorial(a-1);
+}
+    
+int main() {
+    // Write C code here
+    int a;
+    printf("Enter a number\n");
+    scanf("%d", &a);
+    printf("ans : %d",  factorial(a));
+        return 0;
+}
