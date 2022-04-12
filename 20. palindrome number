@@ -1,0 +1,17 @@
+int main() {
+    // Write C code here
+    int a, t, r, n=0;
+    printf("enter a number");
+    scanf("%d",&a);
+    t = a;
+    while(t  > 0){
+        r = t %10;
+        n = n * 10 +r;
+        t = t/10;
+    }
+    if(a == n){
+        printf("palindrome number");
+    }
+    
+    return 0;
+}
