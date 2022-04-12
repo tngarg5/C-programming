@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+ int main(){
+     int a,b,c,max=0, min;
+     //input
+     printf("enter 3 numbers\n");
+     scanf("%d", &a);
+     scanf("%d", &b);
+     scanf("%d", &c);
+     min = a;
+     //compare max
+     if(a>= b && a>= c){
+     max = a;
+     if( b< c)
+     min = b;
+     else min = c;
+     }
+     else if(b>=a && b >= c){
+     max = b;
+     if( a < c)
+     min = a;
+     else min = c;
+     }
+     else {
+         max = c;
+        if( a < b)
+        min = a;
+        else min = b;
+     }
+        printf ("max = %d\n", max);
+      printf ("min = %d\n", min);
+     
+    
+     
+ 
+    
+    return 0;
+}
